@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+
+/*Header*/
+
+#header {
+  text-align: center;
+  height: 100px;
+  background-color: rgba(255,255,255, .5)
+}
+
+#header h1 {
+  margin-top: 30px;
+  font-weight: 300;
+}
+
+/*Container*/
+
+#container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+input[type="radio"],
+input[type="checkbox"]{
+  display: none;
+}
+
+input[value="frame1"]:checked ~ #slider figure {
+  transition: .2s;
+  left: 0%;
+}
+
+input[value="frame2"]:checked ~ #slider figure {
+  transition: .2s;
+  left: -100%;
+}
+
+input[value="frame3"]:checked ~ #slider figure {
+  transition: .2s;
+  left: -200%;
+}
+
+input[value="frame4"]:checked ~ #slider figure {
+  transition: .2s;
+  left: -300%;
+}
+
+input[value="play"]:checked ~ #slider figure {
+  left: 0%;
+  animation: 10s slidy infinite;
+}
+
+/*Slider*/
+
+#slider {
+  overflow: hidden;
+}
+
+#slider figure img {
+  width: 25%;
+  /*float: left;*/
+}
+
+#slider figure {
+  position: relative;
+  width: 400%;
+  margin: 0;
+  left: 0;
+  text-align: left;
+  font-size: 0;
+}
+
+/*Animation*/
+
+@keyframes slidy {
+0% { left: 0%; }
+20% { left: 0%; }
+25% { left: -100%; }
+45% { left: -100%; }
+50% { left: -200%; }
+70% { left: -200%; }
+75% { left: -300%; }
+95% { left: -300%; }
+}
+
+/*Navigation*/
+
+#navigation {
+  text-align: center;
+}
+
+.button {
+  border-radius: 50%;
+  display: inline-block;
+  width: 20px;
+  background-color: white;
+  border: 1px solid black;
+  height: 20px;
+  transition: .3s;
+}
+
+.button:hover {
+  background-color: #f1f1f1;
+  border: 1px solid #f1f1f1;
+}

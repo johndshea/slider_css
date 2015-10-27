@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
+    <title>Slider CSS</title>
+  </head>
+  <body>
+
+    <!-- header -->
+    <div id="header">
+        <h1> CSS SLIDER </h1>
+
+        <!-- nav -->
+        <div id="navigation">
+            <label class="button" for="frame1"></label>
+            <label class="button" for="frame2"></label>
+            <label class="button" for="frame3"></label>
+            <label class="button" for="frame4"></label>
+            <label class="play" for="play">Auto-Play</label>
+        </div>
+
+    </div>
+
+    <!-- container -->
+    <div id="container">
+      <input type="radio" value="frame1" name="frames" id="frame1"/>
+      <input type="radio" value="frame2" name="frames" id="frame2"/>
+      <input type="radio" value="frame3" name="frames" id="frame3"/>
+      <input type="radio" value="frame4" name="frames" id="frame4"/>
+      <input type="checkbox" value="play" name="play" id="play"/>
+
+      <!-- slider -->
+      <div id="slider">
+        <figure>
+            <img src="./img/1.jpg" alt="">
+            <img src="./img/2.jpg" alt="">
+            <img src="./img/3.jpg" alt="">
+            <img src="./img/4.jpg" alt="">
+          </figure>
+        </div>
+      </div>
+  </body>
+</html>
